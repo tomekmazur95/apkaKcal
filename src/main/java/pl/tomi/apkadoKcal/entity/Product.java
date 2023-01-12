@@ -1,6 +1,8 @@
 package pl.tomi.apkadoKcal.entity;
 
 
+import pl.tomi.apkadoKcal.dto.ProductDTO;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +19,17 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+
+    public static Product of(ProductDTO productDTO){
+        Product product = new Product();
+        product.setName(productDTO.getName());
+        product.setCarb(productDTO.getCarb());
+        product.setFat(productDTO.getFat());
+        product.setProtein(productDTO.getProtein());
+
+        return product;
+    }
 
     public String getName() {
         return name;

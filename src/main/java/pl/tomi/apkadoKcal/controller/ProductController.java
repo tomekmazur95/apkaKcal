@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import pl.tomi.apkadoKcal.dto.ProductDTO;
 import pl.tomi.apkadoKcal.entity.Product;
 import pl.tomi.apkadoKcal.service.ProductService;
 
@@ -28,9 +29,8 @@ public class ProductController {
 
 
     @PostMapping("/products")
-    public void saveP(@RequestBody Product product){
+    public void saveP(@RequestBody ProductDTO product){
         productService.saveProduct(product);
-
     }
 
 

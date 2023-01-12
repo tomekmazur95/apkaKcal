@@ -3,7 +3,7 @@ package pl.tomi.apkadoKcal.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
+import pl.tomi.apkadoKcal.dto.ProductDTO;
 import pl.tomi.apkadoKcal.entity.Product;
 import pl.tomi.apkadoKcal.repository.ProductRepo;
 
@@ -28,7 +28,7 @@ public class ProductService {
 
     }
 
-    public List<Product> getAllProducts(){
+    public List<Product> getAllProducts() {
 
         List<Product> allProducts = productRepo.findAll();
 
@@ -36,16 +36,12 @@ public class ProductService {
 
     }
 
-    public void saveProduct(Product product){
-        productRepo.save(product);
+    public void saveProduct(ProductDTO product) {
+
+        Product productDTO = Product.of(product);
+
+        productRepo.save(productDTO);
     }
-
-
-
-
-
-
-
 
 
 }
