@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Product {
 
-    private  String name;
+    private String name;
     private int protein;
     private int fat;
     private int carb;
@@ -21,7 +21,7 @@ public class Product {
     private Long id;
 
 
-    public static Product of(ProductDTO productDTO){
+    public static Product of(ProductDTO productDTO) {
         Product product = new Product();
         product.setName(productDTO.getName());
         product.setCarb(productDTO.getCarb());
@@ -30,6 +30,7 @@ public class Product {
 
         return product;
     }
+
 
     public String getName() {
         return name;

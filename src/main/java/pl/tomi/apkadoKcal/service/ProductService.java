@@ -8,6 +8,7 @@ import pl.tomi.apkadoKcal.entity.Product;
 import pl.tomi.apkadoKcal.repository.ProductRepo;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -41,6 +42,19 @@ public class ProductService {
         Product productDTO = Product.of(product);
 
         productRepo.save(productDTO);
+    }
+
+    public Optional<Product> getProductbyId(Long id) {
+
+        Optional<Product> foundbyId = productRepo.findById(id);
+
+        return foundbyId;
+    }
+
+    public void deleteProductById(Long id) {
+
+        productRepo.deleteById(id);
+
     }
 
 
