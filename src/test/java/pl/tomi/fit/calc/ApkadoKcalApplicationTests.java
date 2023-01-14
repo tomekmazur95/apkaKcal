@@ -1,4 +1,4 @@
-package pl.tomi.apkadoKcal;
+package pl.tomi.fit.calc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

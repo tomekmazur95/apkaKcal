@@ -1,4 +1,4 @@
-package pl.tomi.apkadoKcal;
+package pl.tomi.fit.calc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

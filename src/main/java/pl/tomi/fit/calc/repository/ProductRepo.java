@@ -1,8 +1,8 @@
-package pl.tomi.apkadoKcal.repository;
+package pl.tomi.fit.calc.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.tomi.apkadoKcal.entity.Product;
+import pl.tomi.fit.calc.entity.Product;
 
 import java.util.Optional;
 
