@@ -5,7 +5,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pl.tomi.fit.calc.dto.CreateProduct;
 import pl.tomi.fit.calc.dto.ViewProduct;
-import pl.tomi.fit.calc.entity.Product;
 import pl.tomi.fit.calc.service.ProductService;
 
 import java.util.List;
