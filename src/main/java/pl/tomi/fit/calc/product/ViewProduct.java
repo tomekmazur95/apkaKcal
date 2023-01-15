@@ -1,6 +1,4 @@
-package pl.tomi.fit.calc.dto;
-
-import pl.tomi.fit.calc.entity.Product;
+package pl.tomi.fit.calc.product;
 
 public record ViewProduct(long id, String name, int protein, int fat, int carb) {
 

@@ -1,6 +1,4 @@
-package pl.tomi.fit.calc.entity;
-
-import pl.tomi.fit.calc.dto.CreateProduct;
+package pl.tomi.fit.calc.product;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

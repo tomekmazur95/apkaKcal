@@ -1,8 +1,7 @@
-package pl.tomi.fit.calc.repository;
+package pl.tomi.fit.calc.product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.tomi.fit.calc.entity.Product;
 
 import java.util.Optional;
 

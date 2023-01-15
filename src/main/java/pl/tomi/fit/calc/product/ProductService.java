@@ -1,12 +1,12 @@
-package pl.tomi.fit.calc.service;
+package pl.tomi.fit.calc.product;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.tomi.fit.calc.dto.CreateProduct;
-import pl.tomi.fit.calc.dto.ViewProduct;
-import pl.tomi.fit.calc.entity.Product;
-import pl.tomi.fit.calc.repository.ProductRepo;
+import pl.tomi.fit.calc.product.CreateProduct;
+import pl.tomi.fit.calc.product.ViewProduct;
+import pl.tomi.fit.calc.product.Product;
+import pl.tomi.fit.calc.product.ProductRepo;
 
 import java.util.List;
 import java.util.Optional;
