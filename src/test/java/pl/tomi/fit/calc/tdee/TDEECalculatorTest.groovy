@@ -33,7 +33,7 @@ class TDEECalculatorTest extends Specification {
         def actualResult = calculator.calculate(personalInformation)
 
         then:
-        def expectedResult = thrown(NullPointerException)
+        def expectedResult = thrown(IllegalArgumentException)
         expectedResult.message == "fields cannot be empty"
 
         where:
