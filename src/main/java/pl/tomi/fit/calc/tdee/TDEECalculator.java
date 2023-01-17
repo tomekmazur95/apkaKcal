@@ -8,7 +8,7 @@ public class TDEECalculator {
 
     public long calculate(PersonalInformation personalInformation) {
         if (personalInformation.gender() == null || personalInformation.activity() == null) {
-            throw new NullPointerException("fields cannot be empty");
+            throw new IllegalArgumentException("fields cannot be empty");
         }
         double tdee = calculateBasalMetabolicRate(personalInformation) * personalInformation.activity().getFactor();
         return Math.round(tdee);
